@@ -1,0 +1,7 @@
+- Leaving a session
+  - Resume at last scrollbar position or if set bookmarked word.
+  (only one word will be visible inside)
+
+
+[Dashboard]
+  - On adding of the view

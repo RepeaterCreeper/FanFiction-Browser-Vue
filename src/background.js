@@ -20,7 +20,7 @@ protocol.registerSchemesAsPrivileged([{scheme: 'app', privileges: { secure: true
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({ title: "FanFiction Browser", icon: "./assets/logo.svg", width: 800, height: 600, webPreferences: {
+  win = new BrowserWindow({ title: "FanFiction Browser", icon: "./assets/logo.svg", width: 1300, height: 900, webPreferences: {
     nodeIntegration: true
   } })
 

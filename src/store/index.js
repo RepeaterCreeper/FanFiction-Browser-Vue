@@ -6,21 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     curChapter: 0,
-    fanfiction: {
-      title: "Ascension of the Kitsune",
-      story: [
-        {
-          chapter: 1,
-          title: "Chapter 1",
-          contents: ["Hello", "World", "First", "Chapter"]
-        },
-        {
-          chapter: 2,
-          title: "Chapter 2",
-          contents: ["Hello", "World", "Second", "Chapter"]
-        }
-      ]
-    }
+    fanfiction: {},
+    libraryList: []
   },
   mutations: {
     goNext(state) {
@@ -35,13 +22,16 @@ export default new Vuex.Store({
   },
   actions: {
     goNext({ commit }, chapter) {
-      commit("goNext")
+      commit("goNext");
+      document.documentElement.scrollTop = 0;
     },
     goBack({ commit }) {
-      commit("goBack")
+      commit("goBack");
+      document.documentElement.scrollTop = 0;
     },
     goToChapter({ commit }, chapter) {
       commit("goToChapter", chapter);
+      document.documentElement.scrollTop = 0;
     }
   },
   modules: {

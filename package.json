@@ -19,6 +19,7 @@
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0-rc.2",
     "roboto-fontface": "*",
+    "url-join": "^4.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuetify": "^2.2.11",
